@@ -25,80 +25,88 @@ const nestedMuppet = {
   nestedPartner: 'Miss Piggy'
 };
 
-const sounds = {
-  moo: "cow",
-  neigh: "horse",
-  baa: "sheep",
-  oink: "pig",
-  cluck: "chicken"
-}
+// const sounds = {
+//   moo: "cow",
+//   neigh: "horse",
+//   baa: "sheep",
+//   oink: "pig",
+//   cluck: "chicken"
+// }
 
-const { moo, neigh, baa, oink, cluck } = sounds;
+// const { moo, neigh, baa, oink, cluck } = sounds;
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ')
 
-const animals = {
-  bessie: "cow",
-  dolly: "sheep",
-  babe: "pig",
-  little: "chicken"
-}
+// const animals = {
+//   bessie: "cow",
+//   dolly: "sheep",
+//   babe: "pig",
+//   little: "chicken"
+// }
 
-const { bessie, dolly, babe, little } = animals
+// const { bessie, dolly, babe, little } = animals
+const [bessie, , dolly, babe, little] = farmAnimals.split(' ')
 
-const diffColors = {
-  blackAndWhite: "cow",
-  black: "sheep",
-  pink: "pig"
-}
+// const diffColors = {
+//   blackAndWhite: "cow",
+//   black: "sheep",
+//   pink: "pig"
+// }
 
-const { blackAndWhite, black, pink } = diffColors
+// const { blackAndWhite, black, pink } = diffColors
+const [blackAndWhite, , black, pink, ,] = farmAnimals.split(' ')
 
-const colorRainbow = {
-  red: "red",
-  orange: "orange",
-  yellow: "yellow",
-  green: "green",
-  blue: "blue",
-  indigo: "indigo",
-  violet: "violet"
-}
+// const colorsToFill = {
+//   red: "red",
+//   orange: "orange",
+//   yellow: "yellow",
+//   green: "green",
+//   blue: "blue",
+//   indigo: "indigo",
+//   violet: "violet"
+// }
 
-const { red, orange, yellow, green, blue, indigo, violet } = colorRainbow
+// const { red, orange, yellow, green, blue, indigo, violet} = colorsToFill
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
 
-const rainbow = {
-  r: "red",
-  o: "orange",
-  y: "yellow",
-  g: "green",
-  b: "blue",
-  v: "violet"
-}
+// const rainbow = {
+//   r: "red",
+//   o: "orange",
+//   y: "yellow",
+//   g: "green",
+//   b: "blue",
+//   v: "violet"
+// }
 
-const { r, o, y, g, b, Hev } = rainbow
+// const { r, o, y, g, b, v } = rainbow
+const [r, o, y, g, b, , v] = colors;
 
-const diffPurp = {
-  indg: "indigo"
-}
+// const diffPurp = {
+//   indg: "indigo"
+// }
 
-const { indg } = diffPurp
+// const { indg } = diffPurp
+const [, , , , , indg, ] = colors;
 
-const objectDecon = {
-  muppetName: "Miss Piggy",
-  color: "pink",
-  song: "Never Before, Never Again",
-  job: "Cast member of The Muppet Show",
-  partner: "Kermit"
-}
+// const objectDecon = {
+//   muppetName: "Miss Piggy",
+//   color: "pink",
+//   song: "Never Before, Never Again",
+//   job: "Cast member of The Muppet Show",
+//   partner: "Kermit"
+// }
 
-const { muppetName, color, song, job, partner } = objectDecon
+// const { muppetName, color, song, job, partner } = objectDecon
+const {muppetName, color, song, job, partner} = muppet;
 
-const songsToSing = {
-  song2: "Moving Right Along",
-  song4: "I Hope That Something Better Comes Along",
-  nestedJob: "Host of The Muppet Show",
-  nestedPartner: "Miss Piggy"
-}
+// const songsToSing = {
+//   song2: "Moving Right Along",
+//   song4: "I Hope That Something Better Comes Along",
+//   nestedJob: "Host of The Muppet Show",
+//   nestedPartner: "Miss Piggy"
+// }
 
-const { song2, song4, nestedJob, nestedPartner } = songsToSing
+// const { song2, song4, nestedJob, nestedPartner } = songsToSing
+const {album: {theMuppetMovie: {song2, song4}}, nestedJob, nestedPartner} = nestedMuppet;
 
 // Strings
 
